@@ -1,0 +1,80 @@
+# General
+*.log
+*.sqlite3
+*.env
+.env.local
+.env.development
+.env.production
+.env.test
+node_modules/
+dist/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Python (Flask & ML)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+/sleepsync/
+.env
+instance/
+*.db
+*.sqlite
+model_training.checkpoint
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Virtual Environment
+/sleepsync/
+backend/sleepsync/
+env/
+.venv/
+
+# Machine Learning
+*.h5
+*.hdf5
+*.pkl
+*.joblib
+*.csv
+*.npy
+*.npz
+models/
+__pycache__/
+logs/
+checkpoints/
+wandb/
+mlruns/
+*.pt
+*.onnx
+
+# React (Vite) Frontend
+node_modules/
+dist/
+.vite/
+.vitepress/
+.cache/
+output/
+build/
+*.tsbuildinfo
+coverage/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Ignore local credentials
+firebase.json
+firestore.indexes.json
+firestore.rules
+
+# OS files
+*.swp
+*.swo
+*.swn
+*.swd
