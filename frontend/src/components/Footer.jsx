@@ -12,13 +12,22 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex space-x-6">
-            <a href="#" className="text-gray-600 hover:text-indigo-600 transition-colors">
+            <a
+              href="https://github.com/Iyabivuz-e"
+              className="text-gray-600 hover:text-indigo-600 transition-colors"
+            >
               <Github className="h-5 w-5" />
             </a>
-            <a href="#" className="text-gray-600 hover:text-indigo-600 transition-colors text-sm">
+            <a
+              href="#"
+              className="text-gray-600 hover:text-indigo-600 transition-colors text-sm"
+            >
               Privacy Policy
             </a>
-            <a href="#" className="text-gray-600 hover:text-indigo-600 transition-colors text-sm">
+            <a
+              href="#"
+              className="text-gray-600 hover:text-indigo-600 transition-colors text-sm"
+            >
               Terms of Service
             </a>
           </div>

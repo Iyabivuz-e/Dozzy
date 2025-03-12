@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+  <!-- Background circle -->
+  <circle cx="96" cy="96" r="96" fill="#EEF2FF" />
+  
+  <!-- Gradient circle element -->
+  <circle cx="96" cy="96" r="32" fill="url(#gradient)" opacity="0.3" />
+  
+  <!-- Sun icon -->
+  <g transform="translate(120, 60)">
+    <circle cx="0" cy="0" r="12" fill="#F59E0B" />
+    <g stroke="#F59E0B" stroke-width="2" stroke-linecap="round">
+      <!-- Sun rays -->
+      <line x1="0" y1="-16" x2="0" y2="-20" />
+      <line x1="11.3" y1="-11.3" x2="14.1" y2="-14.1" />
+      <line x1="16" y1="0" x2="20" y2="0" />
+      <line x1="11.3" y1="11.3" x2="14.1" y2="14.1" />
+      <line x1="0" y1="16" x2="0" y2="20" />
+      <line x1="-11.3" y1="11.3" x2="-14.1" y2="14.1" />
+      <line x1="-16" y1="0" x2="-20" y2="0" />
+      <line x1="-11.3" y1="-11.3" x2="-14.1" y2="-14.1" />
+    </g>
+  </g>
+  
+  <!-- Moon icon -->
+  <g transform="translate(72, 132)">
+    <path d="M12,0 A12,12 0 0 1 12,24 A12,12 0 0 1 0,12 A12,12 0 0 0 12,0 z" fill="#4F46E5" />
+  </g>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818CF8" /> <!-- indigo-400 -->
+      <stop offset="100%" stop-color="#A855F7" /> <!-- purple-500 -->
+    </linearGradient>
+  </defs>
+</svg>

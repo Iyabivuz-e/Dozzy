@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 import Quiz from "./pages/Quiz";
 import Results from "./pages/Results";
 import Statistics from "./pages/Statistics";
-// import About from "./pages/About";
+import About from "./pages/About";
 
 function App() {
   const [quizResults, setQuizResults] = useState(null);
@@ -29,7 +29,7 @@ function App() {
               element={<Results results={quizResults} />}
             />
             <Route path="/statistics" element={<Statistics />} />
-            {/* <Route path="/about" element={<About />} /> */}
+            <Route path="/about" element={<About />} />
           </Routes>
       </main>
       <Footer />
