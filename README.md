@@ -1,8 +1,8 @@
-# SleepSync - Are You a Morning Lark or a Night Owl?
+# Dozzy - Are You a Morning Lark or a Night Owl?
 A machine learning-powered web application that predicts a user's natural chronotype (morning person or night person) based on their daily habits and preferences.
 
 # Project Overview
-SleepSync features an interactive quiz that collects information about users' sleep patterns and energy levels throughout the day. The application uses a machine learning model to classify users as "Morning Larks" or "Night Owls." What makes SleepSync unique is its interactive feedback loop—users can vote on the accuracy of their prediction, and this data is used to retrain and improve the machine learning model periodically.
+Dozzy features an interactive quiz that collects information about users' sleep patterns and energy levels throughout the day. The application uses a machine learning model to classify users as "Morning Larks" or "Night Owls." What makes Dozzy unique is its interactive feedback loop—users can vote on the accuracy of their prediction, and this data is used to retrain and improve the machine learning model periodically.
 
 # Features
 

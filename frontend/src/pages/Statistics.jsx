@@ -58,7 +58,7 @@ const Statistics = () => {
     <div className="pt-24 px-6 max-w-6xl mx-auto">
       <div className="bg-white rounded-2xl shadow-xl p-6 md:p-10">
         <h1 className="text-3xl font-bold text-gray-800 mb-2">
-          SleepSync Statistics
+          Dozzy Statistics
         </h1>
         <p className="text-gray-600 mb-8">
           Discover insights about chronotype distribution and model performance
@@ -246,7 +246,7 @@ const Statistics = () => {
         </h2>
         <p className="text-gray-700">
           This data represents anonymized user responses and feedback from the
-          SleepSync quiz. Our machine learning model continuously improves as
+          Dozzy quiz. Our machine learning model continuously improves as
           more users provide feedback on their results. All data is collected
           with user consent and stored securely.
         </p>

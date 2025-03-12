@@ -15,7 +15,7 @@ const Navbar = () => {
             <Moon className="h-6 w-6 text-indigo-700 -ml-2" />
           </div>
           <span className="text-xl font-bold bg-gradient-to-r from-yellow-500 to-indigo-700 bg-clip-text text-transparent">
-            SleepSync
+            Dozzy
           </span>
         </Link>
 

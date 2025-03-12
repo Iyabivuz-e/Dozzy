@@ -15,7 +15,6 @@ function App() {
   return (
       <BrowserRouter>
         <div className="flex flex-col min-h-screen bg-gradient-to-b from-indigo-50 to-purple-50">
-          <h1>Hellow wordl</h1>
           <Navbar />
           <main className="flex-grow">
             <Routes>

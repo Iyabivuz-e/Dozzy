@@ -7,7 +7,7 @@ const About = () => {
     <div className="pt-24 px-6 max-w-6xl mx-auto">
       <section className="mb-16">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">
-          About SleepSync
+          About Dozzy
         </h1>
         <p className="text-xl text-gray-600 mb-6">
           Helping you understand your natural sleep rhythm through machine
@@ -21,7 +21,7 @@ const About = () => {
                 Our Mission
               </h2>
               <p className="text-gray-600 mb-4">
-                At SleepSync, we believe that understanding your natural
+                At Dozzy, we believe that understanding your natural
                 chronotype is key to optimizing your daily routine for better
                 productivity, health, and overall well-being.
               </p>
@@ -52,7 +52,7 @@ const About = () => {
 
       <section className="mb-16">
         <h2 className="text-2xl font-bold text-gray-800 mb-6">
-          How SleepSync Works
+          How Dozzy Works
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
