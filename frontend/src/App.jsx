@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Quiz from "./pages/Quiz";
 import Results from "./pages/Results";
-// import Statistics from "./pages/Statistics";
+import Statistics from "./pages/Statistics";
 // import About from "./pages/About";
 
 function App() {
@@ -28,8 +28,8 @@ function App() {
               path="/results"
               element={<Results results={quizResults} />}
             />
-            {/* <Route path="/statistics" element={<Statistics />} />
-            <Route path="/about" element={<About />} /> */}
+            <Route path="/statistics" element={<Statistics />} />
+            {/* <Route path="/about" element={<About />} /> */}
           </Routes>
       </main>
       <Footer />
