@@ -167,7 +167,7 @@ const Results = ({ results }) => {
               </div>
             )}
           </div>
-          <div className="flex items-center justify-between mb-10">
+          <div className="flex items-center justify-between mb-10 max-sm:flex-col">
             <button
               onClick={() => handleFeedback(true)}
               className="flex items-center space-x-2 bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600"
