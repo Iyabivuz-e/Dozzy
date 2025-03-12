@@ -8,13 +8,11 @@ import Quiz from "./pages/Quiz";
 import Results from "./pages/Results";
 import Statistics from "./pages/Statistics";
 import About from "./pages/About";
-import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [quizResults, setQuizResults] = useState(null);
 
   return (
-    <Analytics>
       <BrowserRouter>
         <div className="flex flex-col min-h-screen bg-gradient-to-b from-indigo-50 to-purple-50">
           <h1>Hellow wordl</h1>
@@ -37,7 +35,7 @@ function App() {
           <Footer />
         </div>
       </BrowserRouter>
-    </Analytics>
+    
   );
 }
 
