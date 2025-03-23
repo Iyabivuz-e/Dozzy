@@ -109,30 +109,55 @@ const Quiz = ({ setQuizResults }) => {
     }
   };
 
-  const handleSubmit = () => {
-    setLoading(true);
-    
-    // Calculate the score
-    const totalScore = Object.values(answers).reduce((sum, value) => sum + value, 0);
-    const maxPossibleScore = questions.length * 5; // Assuming 5 is max value per question
-    const percentageScore = (totalScore / maxPossibleScore) * 100;
-    
-    // Determine if Morning Lark or Night Owl
-    // Higher scores indicate Morning Lark tendencies
-    const chronotype = percentageScore > 50 ? "Morning Lark" : "Night Owl";
-    const confidence = Math.abs(percentageScore - 50) * 2; // 0-100 confidence scale
-    
-    setTimeout(() => {
-      setQuizResults({
-        chronotype,
-        confidence: confidence.toFixed(1),
-        score: totalScore,
-        maxScore: maxPossibleScore,
-      });
-      setLoading(false);
-      navigate('/results');
-    }, 1500);
-  };
+   const handleSubmit = async () => {
+     setLoading(true);
+
+     try {
+       const response = await fetch("http://127.0.0.1:5000/predict", {
+         method: "POST",
+         headers: {
+           "Content-Type": "application/json",
+         },
+         body: JSON.stringify({
+           q1: answers[1],
+           q2: answers[2],
+           q3: answers[3],
+           q4: answers[4],
+           q5: answers[5],
+           q6: answers[6],
+           q7: answers[7],
+         }),
+       });
+
+       if (!response.ok) {
+         throw new Error(`HTTP error! status: ${response.status}`);
+       }
+
+       const data = await response.json();
+       console.log("Backend prediction:", data); // Log the prediction for debugging
+
+       // Assuming your backend returns { prediction: 0 or 1 }
+       const chronotype = data.prediction === 0 ? "Morning Lark" : "Night Owl";
+       // You might need to adjust confidence calculation based on your backend response
+       const confidence = 60; // Placeholder - get confidence from backend if available
+
+       setTimeout(() => {
+         setQuizResults({
+           chronotype,
+           confidence: confidence.toFixed(1),
+           score: data.score, // Get score from backend if available
+           maxScore: data.maxScore, // Get maxScore from backend if available
+         });
+         setLoading(false);
+         navigate("/results");
+       }, 1500);
+     } catch (error) {
+       console.error("Error fetching prediction:", error);
+       // Handle error (e.g., display an error message to the user)
+       setLoading(false); // Important: Set loading to false even on error
+     }
+   };
+
 
   const progress = ((Object.keys(answers).length) / questions.length) * 100;
 

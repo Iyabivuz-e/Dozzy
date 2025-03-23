@@ -34,6 +34,8 @@ const Results = ({ results }) => {
     }, 3000);
   };
 
+  
+
   const handleShare = () => {
     // In a real app, this would open a share dialog
     setShowShareMessage(true);

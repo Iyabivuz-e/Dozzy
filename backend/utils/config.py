@@ -6,7 +6,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Configuring the database
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///sleepsync.db"
+app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///dozzy.db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
